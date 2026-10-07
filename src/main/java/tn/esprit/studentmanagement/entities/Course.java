@@ -1,5 +1,6 @@
 package tn.esprit.studentmanagement.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,6 +22,8 @@ public class Course {
     private String description;
 
     @OneToMany(mappedBy = "course")
+    @JsonIgnore
+    @ToString.Exclude
     private List<Enrollment> enrollments;
 
 }
