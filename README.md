@@ -123,7 +123,6 @@ The app is deployed in the `devops` namespace with:
 - a **Secret** for the database credentials
 - the **Spring Boot** deployment and its **Service** (container port `8089`)
 
-## Team
+## Done by
 
 - Aziz Ben Saad
-- Arij Chabbouh
